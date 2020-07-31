@@ -1,0 +1,111 @@
+.search {
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+    align-items: center;
+    &-item {
+      text-decoration: none;
+      font-size: 13px;
+      margin-left: 15px;
+      color: inherit;
+    }
+    .app-icon {
+      background: url("/sprite.png") no-repeat;
+      opacity: 0.7;
+      background-size: 528px 68px;
+      background-position: -132px -38px;
+      display: inline-block;
+      outline: none;
+      vertical-align: middle;
+      border-radius: 2px;
+      height: 30px;
+      width: 30px;
+      color: inherit;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .avatar {
+      background: url("https://lh3.googleusercontent.com/-aINaq6vlFrI/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcQvvkm2Q43oPTLxDzlnDao9s2WoQ.CMID/s64-c/photo.jpg")
+        no-repeat;
+      border-radius: 50%;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      height: 32px;
+      width: 32px;
+      z-index: 0;
+      background-size: contain;
+    }
+  }
+}
+
+.container {
+  max-width: 700px;
+  margin-left: 150px;
+}
+
+.search__details {
+  &-header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-left: 20px;
+    .logo {
+      width: 100px;
+    }
+    .autocomplete {
+      margin-top: -10px;
+      margin-right: auto;
+      margin-left: 20px;
+    }
+  }
+  &__stories {
+    display: grid;
+    max-width: 700px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding-left: 150px;
+    grid-gap: 20px;
+    border-radius: 8px;
+    box-shadow: none;
+    h2 {
+      grid-column: 1/-1;
+    }
+    img {
+      height: 150px;
+      width: 100%;
+    }
+  }
+  &__story {
+    border: 1px solid #dfe1e5;
+
+    &-body {
+      padding: 10px 16px 20px;
+      a {
+        color: #1a0dab;
+        margin-bottom: 10px;
+        display: block;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.57;
+        margin: 0;
+        color: #3c4043;
+      }
+      span {
+        font-size: 12px;
+        color: #70757a;
+      }
+    }
+  }
+  &__results {
+    margin-top: 30px;
+    & > * {
+      margin-bottom: 30px;
+    }
+  }
+}
