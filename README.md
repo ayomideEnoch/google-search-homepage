@@ -7,4 +7,5 @@ Ensure to run npm install or yarn install on your terminal once you have access 
 Run npm start or yarn start on your ternminal afterwards depending on the package manager you are using.
 
 Congratulations! 
-There you have the Google search homepage seating on your PC screen. The Google Search button redirects to https://google.com/search?q={users-text-here} when clicked on while the I'm Feeling Lucky bitton leads to perfects engineering homepage
+There you have the Google search homepage seating on your PC screen. 
+The Google Search button redirects to https://google.com/search?q={users-text-here} when clicked on while the I'm Feeling Lucky button leads to Perfects Engineering homepage.
